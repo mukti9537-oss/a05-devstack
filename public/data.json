@@ -118,35 +118,7 @@
     "rating": 4.8,
     "difficulty": "Intermediate",
     "badge": "Containers"
-  },
-  {
-    "id": 13,
-    "name": "Git",
-    "category": "Tools",
-    "description": "A distributed version control system for tracking and managing code changes.",
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
-    "rating": 4.9,
-    "difficulty": "Beginner-Friendly",
-    "badge": "Essential"
-  },
-  {
-    "id": 14,
-    "name": "GitHub",
-    "category": "Tools",
-    "description": "A platform for hosting repositories and collaborating on software projects.",
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
-    "rating": 4.9,
-    "difficulty": "Beginner-Friendly",
-    "badge": "Popular"
-  },
-  {
-    "id": 15,
-    "name": "Kubernetes",
-    "category": "DevOps",
-    "description": "An open-source platform for automating deployment and management of containers.",
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-original.svg",
-    "rating": 4.7,
-    "difficulty": "Advanced",
-    "badge": "Containers"
   }
+
+
 ]
