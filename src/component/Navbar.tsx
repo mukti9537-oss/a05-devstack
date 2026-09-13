@@ -1,13 +1,17 @@
 import Logo from "../assets/logo-text.png"
+import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 const Navbar = () => {
+    const [menuOpen , setMenuOpen] = useState(false);
     return (
         <div className="border-b border-gray-200 sticky top-0 z-50 bg-white">
             {/* mobile navbar */}
 
             <nav className="flex md:hidden justify-between gap-4 max-w-7xl mx-auto py-5">
 
-                <button className=" text-2xl cursor-pointer">
+                <button 
+                onClick={() => setMenuOpen(!menuOpen) }
+                className=" text-2xl cursor-pointer">
                     <GiHamburgerMenu />
 
                 </button>
@@ -20,6 +24,37 @@ const Navbar = () => {
                     <button className="bg-[#DB2777] rounded-3xl px-4 py-2 text-white text-sm">Sign up</button>
 
                 </div>
+                {/* mobile menu */}
+                {menuOpen && (
+                    <ul className="flex flex-col gap-4 mt-5 text-[#475569] text-center">
+                        <li>
+                            <a href="/" className="text-[#DB2777]">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/">
+                                Technologics
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/">
+                                Projects
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/" >
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/" >
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+                )}
             </nav>
 
             {/* desktop navbar */}
