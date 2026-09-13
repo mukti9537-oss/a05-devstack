@@ -6,9 +6,10 @@ import Technologies from './Technologies';
 interface TechnologyCardsProps {
     TechnologyCardsPromise: Promise<TechnologyCardsType[]>;
     handleAddToStack: (technology: TechnologyCardsType) => void;
+    stack: TechnologyCardsType[];
 }
 
-const TechnologyCards = ({ TechnologyCardsPromise, handleAddToStack }: TechnologyCardsProps) => {
+const TechnologyCards = ({ TechnologyCardsPromise, handleAddToStack , stack }: TechnologyCardsProps) => {
     const TechnologyCards = use(TechnologyCardsPromise);
 
     return (
@@ -21,6 +22,7 @@ const TechnologyCards = ({ TechnologyCardsPromise, handleAddToStack }: Technolog
             <Technologies 
             TechnologyCards={TechnologyCards}
             handleAddToStack = {handleAddToStack}
+            Stack={stack}
             />
 
         </div>

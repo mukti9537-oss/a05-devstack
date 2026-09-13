@@ -86,6 +86,7 @@ function App() {
               <TechnologyCards
                  TechnologyCardsPromise = {TechnologyCardsPromise} 
                  handleAddToStack = {handleAddToStack} 
+                 stack = {stack} 
               />
             </Suspense>
           </div>

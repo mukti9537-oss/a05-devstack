@@ -1,14 +1,14 @@
 import Logo from "../assets/logo-text.png"
-
+import { GiHamburgerMenu } from "react-icons/gi";
 const Navbar = () => {
     return (
-        <div className="border-b border-gray-200">
+        <div className="border-b border-gray-200 sticky top-0 z-50 bg-white">
             {/* mobile navbar */}
 
-            <nav className="hidden md:flex justify-between gap-4 max-w-7xl mx-auto py-5">
+            <nav className="flex md:hidden justify-between gap-4 max-w-7xl mx-auto py-5">
 
                 <button className=" text-2xl cursor-pointer">
-                    Hamburger menu
+                    <GiHamburgerMenu />
 
                 </button>
                 <img src={Logo} className="w-[100px] h-9" alt="" />

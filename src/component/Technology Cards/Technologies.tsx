@@ -4,9 +4,10 @@ import type { TechnologyCardsType } from '../../Types/TechnologycardsType';
 interface TechnologiesProps {
     TechnologyCards: TechnologyCardsType[];
     handleAddToStack: (TechnologyCard: TechnologyCardsType) => void;
+    Stack : TechnologyCardsType[];
 }
 
-const Technologies = ({ TechnologyCards, handleAddToStack }: TechnologiesProps) => {
+const Technologies = ({ TechnologyCards, handleAddToStack, Stack }: TechnologiesProps) => {
     return (
         <div>
             <div className="grid grid-cols-3 gap-4">
@@ -78,7 +79,19 @@ const Technologies = ({ TechnologyCards, handleAddToStack }: TechnologiesProps) 
                                         <button 
                                         type = "button"
                                         onClick={() => handleAddToStack(TechnologyCard)}
-                                        className="btn btn-primary bg-[#0A0F1D] w-full">Add to Stack</button>
+                                        disabled = {Stack.some((item) => item.id === TechnologyCard.id)}
+                                        className={ `btn w-full ${
+                                            Stack.some((item) => item.id === TechnologyCard.id)
+                                            ? "bg-green-400 text-white"
+                                            : "btn-primary bg-[#0A0F1D]"
+                                        }`}
+                                        >
+
+                                        {Stack.some((item) => item.id === TechnologyCard.id)
+                                            ?"Added to Stack"
+                                            : "Add to stack"}
+
+                                        </button>
                                     </div>
 
 
