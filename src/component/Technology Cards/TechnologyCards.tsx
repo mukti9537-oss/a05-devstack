@@ -14,7 +14,7 @@ const TechnologyCards = ({ TechnologyCardsPromise, handleAddToStack }: Technolog
     return (
         <div className=" container max-w-7xl mx-auto py-5">
             <div>
-                <h2 className='font-extrabold text-4xl'>Explore the <span className='text-pink-600'>Technologies</span></h2>
+                <h2 className='font-extrabold text-4xl'>Explore the <span className="h-14 bg-linear-65 from-purple-500 to-pink-500 bg-clip-text text-transparent">Technologies</span></h2>
                 <p className="text-[#64748B]">Pick one technologies per category to build your ideal stack</p>
             </div>
 
