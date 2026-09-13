@@ -11,7 +11,7 @@ const Navbar = () => {
                     <GiHamburgerMenu />
 
                 </button>
-                <img src={Logo} className="w-[100px] h-9" alt="" />
+                <img src={Logo} className="w-[100] h-9" alt="" />
 
 
                 <div className="flex gap-2">
@@ -25,7 +25,7 @@ const Navbar = () => {
             {/* desktop navbar */}
 
             <nav className="hidden md:flex justify-between gap-4 max-w-7xl mx-auto py-5">
-                <img src={Logo} className="w-[100px] h-9" alt="" />
+                <img src={Logo} className="w-[100] h-9" alt="" />
 
 
                 <ul className="flex gap-4 items-center text-[#475569]">
