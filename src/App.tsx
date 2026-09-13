@@ -4,6 +4,7 @@ import Navbar from "./component/Navbar"
 import TechnologyCards from "./component/Technology Cards/TechnologyCards"
 import type { TechnologyCardsType } from "./Types/TechnologycardsType";
 import Stack from "./component/Stack/Stack";
+import Footer from "./component/Footer";
 
 const TechnologyCardsFetch = async (): Promise<TechnologyCardsType[]> => {
   const res = await fetch("/data.json");
@@ -50,9 +51,10 @@ function App() {
     <>
       <Navbar />
       <Banner />
+      
 
       {/* tech + stack */}
-      <div className="container mx-auto px-5">
+      <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-4 gap-4 items-start">
           {/* tech cards */}
 
@@ -78,6 +80,8 @@ function App() {
         </div>
 
       </div>
+
+       <Footer />
 
 
     </>

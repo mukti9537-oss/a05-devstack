@@ -49,7 +49,7 @@ const Technologies = ({ TechnologyCards, handleAddToStack }: TechnologiesProps) 
 
                                     <p className="text-sm text-[#64748B]">
                                         {TechnologyCard.description}</p>
-                                        -
+                    
                                     {/* category+ dificulty+ rating */}
                                     <div className="flex items-center justify-between mt-3">
                                         <span className="badge badge-outline text-[#475569]"> 
