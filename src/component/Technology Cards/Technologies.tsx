@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import type { TechnologyCardsType } from '../../Types/TechnologycardsType';
 
 interface TechnologiesProps {
