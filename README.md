@@ -92,7 +92,7 @@ The application will start on the local development server provided by Vite. ⚡
 
 ### 🌐 Live Project
 
-**Live Demo:** `eloquent-bombolone-26f19b.netlify.app`
+**Live Demo:** `devstack-26d19k.netlify.app`
 
 ### 💻 GitHub Repository
 
